@@ -81,7 +81,7 @@ public class LiveOrderBoard {
         Map<Integer, Double> quantityAtPrice = tranlsateOrderTypeToMap(type);
 
         for (Integer price : quantityAtPrice.keySet()) {
-            System.out.println("- " + quantityAtPrice.get(price) + " kg for " + getCurrencyInstance(Locale.UK).format(price));
+            System.out.println("- " + quantityAtPrice.get(price) + " kg for " + "\u00a3" + price);
         }
     }
 }
